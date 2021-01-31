@@ -8,4 +8,5 @@ ENV FLASK_ENV=${FLASK_ENV}
 
 COPY . /app
 WORKDIR /app
+RUN pip install -t requirements.txt
 ENTRYPOINT flask run --host 0.0.0.0 --port 5000
