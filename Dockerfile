@@ -6,6 +6,6 @@ ARG FLASK_ENV=development
 ENV FLASK_APP=${FLASK_APP}
 ENV FLASK_ENV=${FLASK_ENV}
 
-COPY ./app /app
+COPY . /app
 WORKDIR /app
 ENTRYPOINT flask run --host 0.0.0.0 --port 5000
